@@ -4,7 +4,7 @@
 
 ## Screenshots
 
-![img](Image/info.png)
+<img src="Image/info.png" width="400">
 
 ## Downloads
 
@@ -24,7 +24,7 @@
 
 ### What's the origin of the name Uon?
 
-The project is derived from [Bon-for-Mac](https://github.com/Chriskuei/Bon-for-Mac/). Uon stands for UCAS Online, a elegant network client for UCAS.
+The project is derived from [Bon-for-Mac](https://github.com/Chriskuei/Bon-for-Mac/). Uon stands for UCAS Online, a elegant network client for UCAS. iOS version is [here](https://github.com/Chriskuei/Uoner/).
 
 ---
 

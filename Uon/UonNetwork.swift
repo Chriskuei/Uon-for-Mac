@@ -105,22 +105,8 @@ class BonNetwork: NSObject {
         
         BonNetwork.get(URL: UCAS.URL.LogoutURL, success: { (value) in
         })
+        loginState = .offline
+        
     }
     
-    static func updateLoginState() {
-        
-        let parameters = [
-            "action": "get_online_info"
-        ]
-        
-        post(parameters as [String : String]?) { (value) in
-            if(value == "not_online") {
-                loginState = .offline
-            } else {
-                loginState = .online
-            }
-            
-        }
-        
-    }
 }

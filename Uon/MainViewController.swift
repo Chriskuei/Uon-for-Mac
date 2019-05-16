@@ -69,6 +69,10 @@ class MainViewController: NSViewController {
         eventMonitor?.stop()
     }
     
+    @objc func logout() {
+        BonNetwork.logout()
+    }
+    
     @objc func openGithub() {
         let path = "https://github.com/Chriskuei"
         let url = URL(string: path)!

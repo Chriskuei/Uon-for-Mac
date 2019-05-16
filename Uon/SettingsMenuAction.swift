@@ -20,7 +20,7 @@ class SettingsMenuAction {
         moreMenu.addItem(NSMenuItem(title: "Github", action: #selector(delegate.openGithub), keyEquivalent: ""))
         moreMenu.addItem(NSMenuItem(title: "Weibo", action: #selector(delegate.openWeibo), keyEquivalent: ""))
         
-        menu.addItem(NSMenuItem(title: "Logout", action: #selector(BonNetwork.logout), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Logout", action: #selector(delegate.logout), keyEquivalent: ""))
         let moreMenuItem = NSMenuItem(title: "More", action: nil, keyEquivalent: "")
         menu.addItem(moreMenuItem)
         menu.setSubmenu(moreMenu, for: moreMenuItem)
