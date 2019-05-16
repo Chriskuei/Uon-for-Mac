@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8317308D1D33B02D009B0323 /* BonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317308C1D33B02D009B0323 /* BonTextField.swift */; };
+		832058571CE802AF00BC0FEF /* Double+Bon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832058561CE802AF00BC0FEF /* Double+Bon.swift */; };
+		832058591CE80F7900BC0FEF /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832058581CE80F7900BC0FEF /* SwiftyTimer.swift */; };
+		8320585B1CE8171100BC0FEF /* BonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320585A1CE8171100BC0FEF /* BonConfig.swift */; };
+		8320585E1CE81D1B00BC0FEF /* BonFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320585D1CE81D1B00BC0FEF /* BonFormat.swift */; };
+		832444E71CDF17860031CFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832444E61CDF17860031CFE0 /* Assets.xcassets */; };
+		832444EA1CDF17860031CFE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832444E81CDF17860031CFE0 /* MainMenu.xib */; };
+		832444F81CDF2C290031CFE0 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832444F71CDF2C290031CFE0 /* EventMonitor.swift */; };
+		832444FA1CDF2C640031CFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832444F91CDF2C640031CFE0 /* AppDelegate.swift */; };
+		832444FE1CDF2D5C0031CFE0 /* BonUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832444FD1CDF2D5C0031CFE0 /* BonUserDefaults.swift */; };
+		8324450B1CDF31570031CFE0 /* BonDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324450A1CDF31570031CFE0 /* BonDelay.swift */; };
+		835C34B7228D049700BD8805 /* UCAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C34B6228D049700BD8805 /* UCAS.swift */; };
+		835C34B9228D05BF00BD8805 /* UonNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C34B8228D05BF00BD8805 /* UonNetwork.swift */; };
+		835C34BB228D11D200BD8805 /* String+Bon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C34BA228D11D200BD8805 /* String+Bon.swift */; };
+		835C34C2228D1E9700BD8805 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D8A4F71D8F8A7D00C6C3F3 /* Alamofire.framework */; };
+		835C34C3228D1E9700BD8805 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83D8A4F71D8F8A7D00C6C3F3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83A4B2C51CE75299000E83B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2C41CE75299000E83B4 /* MainViewController.swift */; };
+		83A4B2C81CE752FD000E83B4 /* BonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2C61CE752FD000E83B4 /* BonViewController.swift */; };
+		83A4B2C91CE752FD000E83B4 /* BonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A4B2C71CE752FD000E83B4 /* BonViewController.xib */; };
+		83A4B2CE1CE75720000E83B4 /* NSColor+Bon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2CD1CE75720000E83B4 /* NSColor+Bon.swift */; };
+		83A4B2D01CE758DE000E83B4 /* BonScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2CF1CE758DE000E83B4 /* BonScrollView.swift */; };
+		83A4B2D21CE759A2000E83B4 /* BonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2D11CE759A2000E83B4 /* BonCell.swift */; };
+		83A4B2D51CE76327000E83B4 /* BonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2D41CE76327000E83B4 /* BonButton.swift */; };
+		83A4B2D81CE7698D000E83B4 /* BonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2D71CE7698D000E83B4 /* BonItem.swift */; };
+		83A4B2DA1CE76C17000E83B4 /* BonLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2D91CE76C17000E83B4 /* BonLoginView.swift */; };
+		83A4B2DC1CE774FC000E83B4 /* SettingsMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4B2DB1CE774FC000E83B4 /* SettingsMenuAction.swift */; };
+		83BA4B9B228D416300957CD7 /* UonRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA4B9A228D416300957CD7 /* UonRSA.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		835C34BF228D1E7B00BD8805 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				835C34C3228D1E9700BD8805 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835C34C4228D1F5900BD8805 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8317308C1D33B02D009B0323 /* BonTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonTextField.swift; sourceTree = "<group>"; };
+		832058561CE802AF00BC0FEF /* Double+Bon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Bon.swift"; sourceTree = "<group>"; };
+		832058581CE80F7900BC0FEF /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		8320585A1CE8171100BC0FEF /* BonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonConfig.swift; sourceTree = "<group>"; };
+		8320585D1CE81D1B00BC0FEF /* BonFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonFormat.swift; sourceTree = "<group>"; };
+		832444E11CDF17860031CFE0 /* Uon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		832444E61CDF17860031CFE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		832444E91CDF17860031CFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		832444EB1CDF17860031CFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832444F71CDF2C290031CFE0 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		832444F91CDF2C640031CFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		832444FD1CDF2D5C0031CFE0 /* BonUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonUserDefaults.swift; sourceTree = "<group>"; };
+		8324450A1CDF31570031CFE0 /* BonDelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonDelay.swift; sourceTree = "<group>"; };
+		835C34B6228D049700BD8805 /* UCAS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCAS.swift; sourceTree = "<group>"; };
+		835C34B8228D05BF00BD8805 /* UonNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UonNetwork.swift; sourceTree = "<group>"; };
+		835C34BA228D11D200BD8805 /* String+Bon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Bon.swift"; sourceTree = "<group>"; };
+		83A4B2C41CE75299000E83B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		83A4B2C61CE752FD000E83B4 /* BonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonViewController.swift; sourceTree = "<group>"; };
+		83A4B2C71CE752FD000E83B4 /* BonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BonViewController.xib; sourceTree = "<group>"; };
+		83A4B2CD1CE75720000E83B4 /* NSColor+Bon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Bon.swift"; sourceTree = "<group>"; };
+		83A4B2CF1CE758DE000E83B4 /* BonScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonScrollView.swift; sourceTree = "<group>"; };
+		83A4B2D11CE759A2000E83B4 /* BonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonCell.swift; sourceTree = "<group>"; };
+		83A4B2D41CE76327000E83B4 /* BonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonButton.swift; sourceTree = "<group>"; };
+		83A4B2D71CE7698D000E83B4 /* BonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonItem.swift; sourceTree = "<group>"; };
+		83A4B2D91CE76C17000E83B4 /* BonLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonLoginView.swift; sourceTree = "<group>"; };
+		83A4B2DB1CE774FC000E83B4 /* SettingsMenuAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMenuAction.swift; sourceTree = "<group>"; };
+		83BA4B9A228D416300957CD7 /* UonRSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UonRSA.swift; sourceTree = "<group>"; };
+		83D8A4F71D8F8A7D00C6C3F3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		832444DE1CDF17860031CFE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835C34C2228D1E9700BD8805 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8320585C1CE8171600BC0FEF /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				8320585A1CE8171100BC0FEF /* BonConfig.swift */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		832444D81CDF17860031CFE0 = {
+			isa = PBXGroup;
+			children = (
+				832444E31CDF17860031CFE0 /* Uon */,
+				832444E21CDF17860031CFE0 /* Products */,
+				834E8D1C1D8F86CD00DF4EF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		832444E21CDF17860031CFE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832444E11CDF17860031CFE0 /* Uon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832444E31CDF17860031CFE0 /* Uon */ = {
+			isa = PBXGroup;
+			children = (
+				832444F91CDF2C640031CFE0 /* AppDelegate.swift */,
+				832444FF1CDF2D630031CFE0 /* Helpers */,
+				8320585C1CE8171600BC0FEF /* Configs */,
+				832445041CDF2DBD0031CFE0 /* Services */,
+				83A4B2CC1CE756E6000E83B4 /* Extensions */,
+				83A4B2D31CE75D2F000E83B4 /* Views */,
+				832444FC1CDF2D350031CFE0 /* ViewControllers */,
+				832444E61CDF17860031CFE0 /* Assets.xcassets */,
+				83A4B2C41CE75299000E83B4 /* MainViewController.swift */,
+				832444E81CDF17860031CFE0 /* MainMenu.xib */,
+				832445071CDF300F0031CFE0 /* Supporting Files */,
+				832445081CDF30150031CFE0 /* Frameworks */,
+			);
+			path = Uon;
+			sourceTree = "<group>";
+		};
+		832444FC1CDF2D350031CFE0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83A4B2C61CE752FD000E83B4 /* BonViewController.swift */,
+				83A4B2C71CE752FD000E83B4 /* BonViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		832444FF1CDF2D630031CFE0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8324450A1CDF31570031CFE0 /* BonDelay.swift */,
+				8320585D1CE81D1B00BC0FEF /* BonFormat.swift */,
+				832058581CE80F7900BC0FEF /* SwiftyTimer.swift */,
+				832444F71CDF2C290031CFE0 /* EventMonitor.swift */,
+				83A4B2DB1CE774FC000E83B4 /* SettingsMenuAction.swift */,
+				832444FD1CDF2D5C0031CFE0 /* BonUserDefaults.swift */,
+				83BA4B9A228D416300957CD7 /* UonRSA.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		832445041CDF2DBD0031CFE0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83A4B2D71CE7698D000E83B4 /* BonItem.swift */,
+				835C34B6228D049700BD8805 /* UCAS.swift */,
+				835C34B8228D05BF00BD8805 /* UonNetwork.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		832445071CDF300F0031CFE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				832444EB1CDF17860031CFE0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		832445081CDF30150031CFE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83D8A4F71D8F8A7D00C6C3F3 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		834E8D1C1D8F86CD00DF4EF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A4B2CC1CE756E6000E83B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				832058561CE802AF00BC0FEF /* Double+Bon.swift */,
+				83A4B2CD1CE75720000E83B4 /* NSColor+Bon.swift */,
+				835C34BA228D11D200BD8805 /* String+Bon.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		83A4B2D31CE75D2F000E83B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83A4B2CF1CE758DE000E83B4 /* BonScrollView.swift */,
+				83A4B2D11CE759A2000E83B4 /* BonCell.swift */,
+				83A4B2D41CE76327000E83B4 /* BonButton.swift */,
+				8317308C1D33B02D009B0323 /* BonTextField.swift */,
+				83A4B2D91CE76C17000E83B4 /* BonLoginView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		832444E01CDF17860031CFE0 /* Uon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832444EE1CDF17860031CFE0 /* Build configuration list for PBXNativeTarget "Uon" */;
+			buildPhases = (
+				832444DD1CDF17860031CFE0 /* Sources */,
+				832444DE1CDF17860031CFE0 /* Frameworks */,
+				832444DF1CDF17860031CFE0 /* Resources */,
+				832445091CDF305A0031CFE0 /* ShellScript */,
+				835C34BF228D1E7B00BD8805 /* Embed Frameworks */,
+				835C34C4228D1F5900BD8805 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Uon;
+			productName = Bon;
+			productReference = 832444E11CDF17860031CFE0 /* Uon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		832444D91CDF17860031CFE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Chris;
+				TargetAttributes = {
+					832444E01CDF17860031CFE0 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = RP63UHZLK9;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 832444DC1CDF17860031CFE0 /* Build configuration list for PBXProject "Uon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 832444D81CDF17860031CFE0;
+			productRefGroup = 832444E21CDF17860031CFE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				832444E01CDF17860031CFE0 /* Uon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		832444DF1CDF17860031CFE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832444E71CDF17860031CFE0 /* Assets.xcassets in Resources */,
+				832444EA1CDF17860031CFE0 /* MainMenu.xib in Resources */,
+				83A4B2C91CE752FD000E83B4 /* BonViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		832445091CDF305A0031CFE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		832444DD1CDF17860031CFE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832058571CE802AF00BC0FEF /* Double+Bon.swift in Sources */,
+				8324450B1CDF31570031CFE0 /* BonDelay.swift in Sources */,
+				8320585E1CE81D1B00BC0FEF /* BonFormat.swift in Sources */,
+				832444FA1CDF2C640031CFE0 /* AppDelegate.swift in Sources */,
+				83A4B2D21CE759A2000E83B4 /* BonCell.swift in Sources */,
+				83A4B2DA1CE76C17000E83B4 /* BonLoginView.swift in Sources */,
+				83A4B2C81CE752FD000E83B4 /* BonViewController.swift in Sources */,
+				832444FE1CDF2D5C0031CFE0 /* BonUserDefaults.swift in Sources */,
+				8317308D1D33B02D009B0323 /* BonTextField.swift in Sources */,
+				832058591CE80F7900BC0FEF /* SwiftyTimer.swift in Sources */,
+				83A4B2D01CE758DE000E83B4 /* BonScrollView.swift in Sources */,
+				835C34B9228D05BF00BD8805 /* UonNetwork.swift in Sources */,
+				83A4B2D51CE76327000E83B4 /* BonButton.swift in Sources */,
+				83A4B2CE1CE75720000E83B4 /* NSColor+Bon.swift in Sources */,
+				8320585B1CE8171100BC0FEF /* BonConfig.swift in Sources */,
+				83A4B2D81CE7698D000E83B4 /* BonItem.swift in Sources */,
+				832444F81CDF2C290031CFE0 /* EventMonitor.swift in Sources */,
+				835C34BB228D11D200BD8805 /* String+Bon.swift in Sources */,
+				835C34B7228D049700BD8805 /* UCAS.swift in Sources */,
+				83BA4B9B228D416300957CD7 /* UonRSA.swift in Sources */,
+				83A4B2C51CE75299000E83B4 /* MainViewController.swift in Sources */,
+				83A4B2DC1CE774FC000E83B4 /* SettingsMenuAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		832444E81CDF17860031CFE0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				832444E91CDF17860031CFE0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		832444EC1CDF17860031CFE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		832444ED1CDF17860031CFE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		832444EF1CDF17860031CFE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Uon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chriskuei.Uon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		832444F01CDF17860031CFE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Uon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chriskuei.Uon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		832444DC1CDF17860031CFE0 /* Build configuration list for PBXProject "Uon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832444EC1CDF17860031CFE0 /* Debug */,
+				832444ED1CDF17860031CFE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832444EE1CDF17860031CFE0 /* Build configuration list for PBXNativeTarget "Uon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832444EF1CDF17860031CFE0 /* Debug */,
+				832444F01CDF17860031CFE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 832444D91CDF17860031CFE0 /* Project object */;
+}
