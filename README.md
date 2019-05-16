@@ -4,7 +4,7 @@
 
 ## Screenshots
 
-![img](Image/Info.png)
+![img](Image/info.png)
 
 ## Downloads
 
