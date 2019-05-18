@@ -1,9 +1,9 @@
 # Uon for Mac
 
-![Release](https://img.shields.io/github/release-pre/Chriskuei/Uon-for-Mac.svg)
-![Download](https://img.shields.io/github/downloads/Chriskuei/Uon-for-Mac/total.svg)
-![Code size](https://img.shields.io/github/languages/code-size/Chriskuei/Uon-for-Mac.svg)
-![Licence](https://img.shields.io/github/license/Chriskuei/Uon-for-Mac.svg)
+[![Release](https://img.shields.io/github/release-pre/Chriskuei/Uon-for-Mac.svg)](https://github.com/Chriskuei/Uon-for-Mac/releases)
+[![Download](https://img.shields.io/github/downloads/Chriskuei/Uon-for-Mac/total.svg)](https://github.com/Chriskuei/Uon-for-Mac/releases/download/v0.1.0/Uon.app.zip)
+[![Code size](https://img.shields.io/github/languages/code-size/Chriskuei/Uon-for-Mac.svg)](https://github.com/Chriskuei/Uon-for-Mac)
+[![Licence](https://img.shields.io/github/license/Chriskuei/Uon-for-Mac.svg)](LICENSE)
 
 > Elegant network client for [UCAS](http://www.ucas.edu.cn)
 
